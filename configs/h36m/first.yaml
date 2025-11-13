@@ -1,0 +1,34 @@
+#Training
+learning_rate: 0.002
+batch_size: 128
+weight_decay: 0.01
+lr_decay: 0.99
+epochs: 60
+train_2d: False
+
+# Model
+model_name: MotionMamba
+st_depth: 4
+channel: 64
+d_state: 16
+bimamba_type: v2
+if_divide_out: True
+n_joints: 17
+act_layer: gelu
+n_frames: 243 # 243 if add_velocity is False else 242
+expand: 1
+
+# Data
+data_root: data/motion3d/
+data_root_2d: data/motion2d/
+subset_list: [ H36M-243 ]
+dt_file: h36m_sh_conf_cam_source_final.pkl
+root_rel: True # Normalizing joints relative to the root joint
+add_velocity: False
+line_pose: False
+num_joints: 17
+
+
+# Augmentation
+use_proj_as_2d: False   # if use gt 2d, choose True
+flip: True

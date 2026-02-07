@@ -1,4 +1,4 @@
-# 🌀 Mamba-Driven Topology Fusion for Monocular 3D Human Pose Estimation (IMAVIS Under Review)
+# 🌀 Mamba-Driven Topology Fusion for Monocular 3D Human Pose Estimation (Published on Image and Vision Computing)
 
 
 Official PyTorch implementation of our paper:
